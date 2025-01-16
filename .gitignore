@@ -1,2 +1,25 @@
 .svn
 .DS_Store
+
+# WordPress core
+src/wordpress/*
+
+# Keep custom themes
+!src/wordpress/wp-content/
+src/wordpress/wp-content/*
+!src/wordpress/wp-content/themes/
+src/wordpress/wp-content/themes/*
+!src/wordpress/wp-content/themes/your-custom-theme/
+
+# Keep custom plugins
+!src/wordpress/wp-content/plugins/
+src/wordpress/wp-content/plugins/*
+!src/wordpress/wp-content/plugins/your-custom-plugin/
+
+# WordPress config
+src/wordpress/wp-config.php
+
+# Other WordPress files
+src/wordpress/.htaccess
+src/wordpress/readme.html
+src/wordpress/license.txt
