@@ -1,4 +1,17 @@
 services:
+
+  react:
+    image: node:latest
+    container_name: react
+    working_dir: /app
+    ports:
+      - "5173:5173" # Default vite port
+    volumes:
+      - ./src/react-embed:/app
+    command: sh -c "npm install && npm run dev -- --host"
+    networks:
+      - wp_net
+
   wordpress:
     restart: always
     image: wordpress:latest

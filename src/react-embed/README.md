@@ -1,3 +1,9 @@
+# React Embed
+
+This is a simple React component for rendering a DocumentCloud block.
+
+The block supports responsive embedded viewers for Documents, Notes, and Pages, with configuration options.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
